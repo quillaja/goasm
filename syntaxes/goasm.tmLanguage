@@ -168,7 +168,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(?i:v?(mov|h?add|sub|div|mul|inc|dec|neg|lea|cmp|and(n)?|or|xor|shl|shr|sll|sr[la]|sqrt|abs|round|cvt|broadcast|blend|(insert|extract)[fi]?\d{0,3})[bwlq]?[au]?[ps]?[sdi]?)\b</string>
+					<string>\b(?i:(v)?(mov|cmov|h?add|sub|div|mul|inc|dec|neg|sqrt|abs|max|min|lea|cmp|and(n)?|or|xor|not|shl|shr|sll|sr[la]|bs[fr]|round|cvtt?(.{2}2.{2})?|broadcast|blend|(insert|extract)[fi]?\d{0,3})[bwlq(dq)]?[au]?[ps]?[sdi]?)\b</string>
 					<key>name</key>
 					<string>entity.name.function</string>
 				</dict>
@@ -346,7 +346,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(?i:[abcd]x|di|si|r(8|9|1[0-5]))\b</string>
+					<string>\b(?i:[abcd]x|bp|di|si|r(8|9|1[0-5]))\b</string>
 					<key>name</key>
 					<string>variable.other.readwrite</string>
 				</dict>
@@ -446,7 +446,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(?i:j(mp|eq|ne|[gl][te]?|c)?)\b</string>
+					<string>\b(?i:j(mp|eq|ne|[gl][te]?|c|ae|z|ls|b|e)?)\b</string>
 					<key>name</key>
 					<string>keyword.control.conditional</string>
 				</dict>
