@@ -1,0 +1,44 @@
+{
+	"name": "language-goasm-x86",
+	"displayName": "goasm",
+	"description": "Go Assembler x86 language support",
+	"version": "0.0.1",
+	"publisher": "quillaja",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "asm",
+				"aliases": [
+					"go",
+					"goasm",
+					"plan9",
+					"GAS/AT&T x86/x64",
+					"asm"
+				],
+				"extensions": [
+					".s",
+					".S"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "asm",
+				"scopeName": "source.x86",
+				"path": "./syntaxes/goasm.tmLanguage"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "00000000-0000-0000-0000-aab05260382e",
+		"publisherId": "00000000-0000-0000-0000-8e58f90a0fda",
+		"publisherDisplayName": "quillaja"
+	}
+}
