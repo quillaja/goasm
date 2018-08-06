@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "go asm",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "mnemonics"
+		},
+		{
+			"include": "registers"
+		},
+		{
+			"include": "entities"
+		},
+		{
+			"include": "preprocessor"
+		},
+		{
+			"include": "comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.conditional",
+				"match": "\\b(?i:j(mp|eq|ne|[gl][te]?|c|ae|z|ls|b|e)?)\\b"
+			}, {
+				"name": "keyword.control",
+				"match": "\\bRET\\b"
+			}, {
+				"name": "storage.type",
+				"match": "\\b(TEXT|DATA)\\b"
+			}, {
+				"name": "storage.type.numeric.go",
+				"match": "\\bGLOBL\\b"
+			}, {
+				"name": "storage.modifier",
+				"match": "\\b(?i:(noprof|dupok|nosplit|rodata|noptr|wrapper|needctxt))\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.asm",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.asm",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line",
+				"match": "(//).*$"	
+			}]
+		}
+	},
+	"scopeName": "source.x86"
+}
