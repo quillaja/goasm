@@ -1,7 +1,7 @@
 {
     "name": "goasm",
     "displayName": "Go Asm",
-    "description": "Syntax highlighting for Go assembly.",
+    "description": "Syntax highlighting & autocomplete for Go assembly.",
     "version": "0.0.2",
     "publisher": "quillaja",
     "icon": "goasm.png",
