@@ -26,7 +26,7 @@ function activate(context) {
 }
 
 function loadItems() {
-	let opsFile = fs.readFileSync(path.resolve(__dirname, "operations.json"), "utf8");
+	let opsFile = fs.readFileSync(path.resolve(__dirname, "final-cmds.json"), "utf8");
 	let regFile = fs.readFileSync(path.resolve(__dirname, "registers.json"), "utf8");
 
 	let ops = JSON.parse(opsFile);
@@ -36,11 +36,11 @@ function loadItems() {
 
 	let items = [];
 
-	for (const op of ops) {
-
-		let item = new vscode.CompletionItem(op["op"], vscode.CompletionItemKind.Function);
-		item.documentation = op["desc"];
-		item.detail = op["sig"].map(s => op["op"] + " " + s).join("\n");
+	for (const op in ops) {
+		let info = ops[op];
+		let item = new vscode.CompletionItem(op, vscode.CompletionItemKind.Function);
+		item.documentation = info.desc.join("\n");
+		item.detail = info.params.map(s => op + " " + s).join("\n");
 		// add.insertText = new vscode.SnippetString("ADDPS $1, $2");
 
 		items.push(item);
