@@ -1,0 +1,2960 @@
+[
+    {
+        "op": "AAA",
+        "sig": [],
+        "desc": "ASCII Adjust After Addition"
+    },
+    {
+        "op": "AAD",
+        "sig": [
+            "imm8"
+        ],
+        "desc": "ASCII Adjust AX Before Division"
+    },
+    {
+        "op": "AAM",
+        "sig": [
+            "imm8"
+        ],
+        "desc": "ASCII Adjust AX After Multiply"
+    },
+    {
+        "op": "AAS",
+        "sig": [],
+        "desc": "ASCII Adjust AL After Subtraction"
+    },
+    {
+        "op": "ADDPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "ADDPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "ADDSD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Add Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "ADDSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Add Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "ADDSUBPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Double-FP Add/Subtract"
+    },
+    {
+        "op": "ADDSUBPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Single-FP Add/Subtract"
+    },
+    {
+        "op": "AESDEC",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Perform One Round of an AES Decryption Flow"
+    },
+    {
+        "op": "AESDECLAST",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Perform Last Round of an AES Decryption Flow"
+    },
+    {
+        "op": "AESENC",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Perform One Round of an AES Encryption Flow"
+    },
+    {
+        "op": "AESENCLAST",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Perform Last Round of an AES Encryption Flow"
+    },
+    {
+        "op": "AESIMC",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Perform the AES InvMixColumn Transformation"
+    },
+    {
+        "op": "AESKEYGENASSIST",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "AES Round Key Generation Assist"
+    },
+    {
+        "op": "ANDNPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical AND NOT of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "ANDNPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical AND NOT of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "ANDPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical AND of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "ANDPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical AND of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "ARPL",
+        "sig": [
+            "r16, r/m16"
+        ],
+        "desc": "Adjust RPL Field of Segment Selector"
+    },
+    {
+        "op": "BLENDPD",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Blend Packed Double Precision Floating-Point Values"
+    },
+    {
+        "op": "BLENDPS",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Blend Packed Single Precision Floating-Point Values"
+    },
+    {
+        "op": "BLENDVPD",
+        "sig": [
+            "<XMM0>, xmm2/m128, xmm1"
+        ],
+        "desc": "Variable Blend Packed Double Precision Floating-Point Values"
+    },
+    {
+        "op": "BLENDVPS",
+        "sig": [
+            "<XMM0>, xmm2/m128, xmm1"
+        ],
+        "desc": "Variable Blend Packed Single Precision Floating-Point Values"
+    },
+    {
+        "op": "CALL",
+        "sig": [
+            "rel16",
+            "rel32",
+            "rel32"
+        ],
+        "desc": "Call Procedure"
+    },
+    {
+        "op": "CBW",
+        "sig": [],
+        "desc": "Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword"
+    },
+    {
+        "op": "CWDE",
+        "sig": [],
+        "desc": "Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword"
+    },
+    {
+        "op": "CDQE",
+        "sig": [],
+        "desc": "Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword"
+    },
+    {
+        "op": "CLAC",
+        "sig": [],
+        "desc": "Clear AC Flag in EFLAGS Register"
+    },
+    {
+        "op": "CLC",
+        "sig": [],
+        "desc": "Clear Carry Flag"
+    },
+    {
+        "op": "CLD",
+        "sig": [],
+        "desc": "Clear Direction Flag"
+    },
+    {
+        "op": "CLFLUSH",
+        "sig": [
+            "m8"
+        ],
+        "desc": "Flush Cache Line"
+    },
+    {
+        "op": "CLI",
+        "sig": [],
+        "desc": "Clear Interrupt Flag"
+    },
+    {
+        "op": "CLTS",
+        "sig": [],
+        "desc": "Clear Task-Switched Flag in CR0"
+    },
+    {
+        "op": "CMC",
+        "sig": [],
+        "desc": "Complement Carry Flag"
+    },
+    {
+        "op": "CMPPD",
+        "sig": [
+            "imm8, xmm1, xmm2/m128"
+        ],
+        "desc": "Compare Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "CMPPS",
+        "sig": [
+            "imm8, xmm1, xmm2/m128"
+        ],
+        "desc": "Compare Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "CMPSB",
+        "sig": [],
+        "desc": "Compare String Operands"
+    },
+    {
+        "op": "CMPSW",
+        "sig": [],
+        "desc": "Compare String Operands"
+    },
+    {
+        "op": "CMPSD",
+        "sig": [
+            "imm8, xmm1, xmm2/m64"
+        ],
+        "desc": "Compare String Operands"
+    },
+    {
+        "op": "CMPSQ",
+        "sig": [],
+        "desc": "Compare String Operands"
+    },
+    {
+        "op": "CMPSD",
+        "sig": [
+            "imm8, xmm1, xmm2/m64"
+        ],
+        "desc": "Compare Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "CMPSS",
+        "sig": [
+            "imm8, xmm1, xmm2/m32"
+        ],
+        "desc": "Compare Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "CMPXCHG8B",
+        "sig": [
+            "m64"
+        ],
+        "desc": "Compare and Exchange Bytes"
+    },
+    {
+        "op": "CMPXCHG16B",
+        "sig": [
+            "m128"
+        ],
+        "desc": "Compare and Exchange Bytes"
+    },
+    {
+        "op": "COMISD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Compare Scalar Ordered Double-Precision Floating-Point Values and Set EFLAGS"
+    },
+    {
+        "op": "COMISS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Compare Scalar Ordered Single-Precision Floating-Point Values and Set EFLAGS"
+    },
+    {
+        "op": "CPUID",
+        "sig": [],
+        "desc": "CPU Identification"
+    },
+    {
+        "op": "CVTPD2PI",
+        "sig": [
+            "xmm2/m128, mm1"
+        ],
+        "desc": "Convert Packed Double-Precision FP Values to Packed Dword Integers"
+    },
+    {
+        "op": "CVTPD2PS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Convert Packed Double-Precision FP Values to Packed Single-Precision FP Values"
+    },
+    {
+        "op": "CVTPI2PD",
+        "sig": [
+            "mm2/m64, xmm1"
+        ],
+        "desc": "Convert Packed Dword Integers to Packed Double-Precision FP Values"
+    },
+    {
+        "op": "CVTPI2PS",
+        "sig": [
+            "mm2/m64, xmm1"
+        ],
+        "desc": "Convert Packed Dword Integers to Packed Single-Precision FP Values"
+    },
+    {
+        "op": "CVTPS2PD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Convert Packed Single-Precision FP Values to Packed Double-Precision FP Values"
+    },
+    {
+        "op": "CVTPS2PI",
+        "sig": [
+            "xmm2/m64, mm1"
+        ],
+        "desc": "Convert Packed Single-Precision FP Values to Packed Dword Integers"
+    },
+    {
+        "op": "CVTSD2SS",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Convert Scalar Double-Precision FP Value to Scalar Single-Precision FP Value"
+    },
+    {
+        "op": "CVTSS2SD",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Convert Scalar Single-Precision FP Value to Scalar Double-Precision FP Value"
+    },
+    {
+        "op": "CVTTPD2PI",
+        "sig": [
+            "xmm2/m128, mm1"
+        ],
+        "desc": "Convert with Truncation Packed Double-Precision FP Values to Packed Dword Integers"
+    },
+    {
+        "op": "CVTTPS2PI",
+        "sig": [
+            "xmm2/m64, mm1"
+        ],
+        "desc": "Convert with Truncation Packed Single-Precision FP Values to Packed Dword Integers"
+    },
+    {
+        "op": "CWD",
+        "sig": [],
+        "desc": "Convert Word to Doubleword/Convert Doubleword to Quadword"
+    },
+    {
+        "op": "CDQ",
+        "sig": [],
+        "desc": "Convert Word to Doubleword/Convert Doubleword to Quadword"
+    },
+    {
+        "op": "CQO",
+        "sig": [],
+        "desc": "Convert Word to Doubleword/Convert Doubleword to Quadword"
+    },
+    {
+        "op": "DAA",
+        "sig": [],
+        "desc": "Decimal Adjust AL after Addition"
+    },
+    {
+        "op": "DAS",
+        "sig": [],
+        "desc": "Decimal Adjust AL after Subtraction"
+    },
+    {
+        "op": "DIVPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Divide Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "DIVPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Divide Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "DIVSD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Divide Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "DIVSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Divide Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "DPPD",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Dot Product of Packed Double Precision Floating-Point Values"
+    },
+    {
+        "op": "DPPS",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Dot Product of Packed Single Precision Floating-Point Values"
+    },
+    {
+        "op": "EMMS",
+        "sig": [],
+        "desc": "Empty MMX Technology State"
+    },
+    {
+        "op": "ENTER",
+        "sig": [
+            "0, imm16",
+            "1, imm16"
+        ],
+        "desc": "Make Stack Frame for Procedure Parameters"
+    },
+    {
+        "op": "EXTRACTPS",
+        "sig": [
+            "imm8, xmm1, r/m32"
+        ],
+        "desc": "Extract Packed Single Precision Floating-Point Value"
+    },
+    {
+        "op": "F2XM1",
+        "sig": [],
+        "desc": "Compute 2x\u20131"
+    },
+    {
+        "op": "FABS",
+        "sig": [],
+        "desc": "Absolute Value"
+    },
+    {
+        "op": "FIADD",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Add"
+    },
+    {
+        "op": "FBLD",
+        "sig": [
+            "m80dec"
+        ],
+        "desc": "Load Binary Coded Decimal"
+    },
+    {
+        "op": "FBSTP",
+        "sig": [
+            "m80bcd"
+        ],
+        "desc": "Store BCD Integer and Pop"
+    },
+    {
+        "op": "FCHS",
+        "sig": [],
+        "desc": "Change Sign"
+    },
+    {
+        "op": "FCLEX",
+        "sig": [],
+        "desc": "Clear Exceptions"
+    },
+    {
+        "op": "FNCLEX",
+        "sig": [],
+        "desc": "Clear Exceptions"
+    },
+    {
+        "op": "FCOMP",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Compare Floating Point Values"
+    },
+    {
+        "op": "FCOMPP",
+        "sig": [],
+        "desc": "Compare Floating Point Values"
+    },
+    {
+        "op": "FCOMI",
+        "sig": [
+            "ST(i), ST(0)"
+        ],
+        "desc": "Compare Floating Point Values and Set EFLAGS"
+    },
+    {
+        "op": "FCOMIP",
+        "sig": [
+            "ST(i), ST(0)"
+        ],
+        "desc": "Compare Floating Point Values and Set EFLAGS"
+    },
+    {
+        "op": "FUCOMIP",
+        "sig": [
+            "ST(i), ST(0)"
+        ],
+        "desc": "Compare Floating Point Values and Set EFLAGS"
+    },
+    {
+        "op": "FCOS",
+        "sig": [],
+        "desc": "Cosine"
+    },
+    {
+        "op": "FDECSTP",
+        "sig": [],
+        "desc": "Decrement Stack-Top Pointer"
+    },
+    {
+        "op": "FDIVP",
+        "sig": [
+            "ST(0), ST(i)"
+        ],
+        "desc": "Divide"
+    },
+    {
+        "op": "FIDIV",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Divide"
+    },
+    {
+        "op": "FDIVR",
+        "sig": [
+            "ST(i), ST(0)"
+        ],
+        "desc": "Reverse Divide"
+    },
+    {
+        "op": "FDIVRP",
+        "sig": [
+            "ST(0), ST(i)"
+        ],
+        "desc": "Reverse Divide"
+    },
+    {
+        "op": "FIDIVR",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Reverse Divide"
+    },
+    {
+        "op": "FFREE",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Free Floating-Point Register"
+    },
+    {
+        "op": "FICOM",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Compare Integer"
+    },
+    {
+        "op": "FICOMP",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Compare Integer"
+    },
+    {
+        "op": "FILD",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Load Integer"
+    },
+    {
+        "op": "FINCSTP",
+        "sig": [],
+        "desc": "Increment Stack-Top Pointer"
+    },
+    {
+        "op": "FINIT",
+        "sig": [],
+        "desc": "Initialize Floating-Point Unit"
+    },
+    {
+        "op": "FNINIT",
+        "sig": [],
+        "desc": "Initialize Floating-Point Unit"
+    },
+    {
+        "op": "FIST",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Store Integer"
+    },
+    {
+        "op": "FISTP",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Store Integer"
+    },
+    {
+        "op": "FISTTP",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Store Integer with Truncation"
+    },
+    {
+        "op": "FLD",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Load Floating Point Value"
+    },
+    {
+        "op": "FLD1",
+        "sig": [],
+        "desc": "Load Constant"
+    },
+    {
+        "op": "FLDL2T",
+        "sig": [],
+        "desc": "Load Constant"
+    },
+    {
+        "op": "FLDL2E",
+        "sig": [],
+        "desc": "Load Constant"
+    },
+    {
+        "op": "FLDPI",
+        "sig": [],
+        "desc": "Load Constant"
+    },
+    {
+        "op": "FLDLG2",
+        "sig": [],
+        "desc": "Load Constant"
+    },
+    {
+        "op": "FLDCW",
+        "sig": [
+            "m2byte"
+        ],
+        "desc": "Load x87 FPU Control Word"
+    },
+    {
+        "op": "FMUL",
+        "sig": [
+            "ST(i), ST(0)",
+            "ST(0), ST(i)"
+        ],
+        "desc": "Multiply"
+    },
+    {
+        "op": "FMULP",
+        "sig": [
+            "ST(0), ST(i)"
+        ],
+        "desc": "Multiply"
+    },
+    {
+        "op": "FIMUL",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Multiply"
+    },
+    {
+        "op": "FNOP",
+        "sig": [],
+        "desc": "No Operation"
+    },
+    {
+        "op": "FPATAN",
+        "sig": [],
+        "desc": "Partial Arctangent"
+    },
+    {
+        "op": "FPREM",
+        "sig": [],
+        "desc": "Partial Remainder"
+    },
+    {
+        "op": "FPREM1",
+        "sig": [],
+        "desc": "Partial Remainder"
+    },
+    {
+        "op": "FPTAN",
+        "sig": [],
+        "desc": "Partial Tangent"
+    },
+    {
+        "op": "FRNDINT",
+        "sig": [],
+        "desc": "Round to Integer"
+    },
+    {
+        "op": "FSAVE",
+        "sig": [
+            "m94/108byte"
+        ],
+        "desc": "Store x87 FPU State"
+    },
+    {
+        "op": "FSCALE",
+        "sig": [],
+        "desc": "Scale"
+    },
+    {
+        "op": "FSIN",
+        "sig": [],
+        "desc": "Sine"
+    },
+    {
+        "op": "FSINCOS",
+        "sig": [],
+        "desc": "Sine and Cosine"
+    },
+    {
+        "op": "FSQRT",
+        "sig": [],
+        "desc": "Square Root"
+    },
+    {
+        "op": "FST",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Store Floating Point Value"
+    },
+    {
+        "op": "FSTP",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Store Floating Point Value"
+    },
+    {
+        "op": "FSTCW",
+        "sig": [
+            "m2byte"
+        ],
+        "desc": "Store x87 FPU Control Word"
+    },
+    {
+        "op": "FNSTCW",
+        "sig": [
+            "m2byte"
+        ],
+        "desc": "Store x87 FPU Control Word"
+    },
+    {
+        "op": "FSTENV",
+        "sig": [
+            "m14/28byte"
+        ],
+        "desc": "Store x87 FPU Environment"
+    },
+    {
+        "op": "FSTSW",
+        "sig": [
+            "AX",
+            "m2byte"
+        ],
+        "desc": "Store x87 FPU Status Word"
+    },
+    {
+        "op": "FNSTSW",
+        "sig": [
+            "AX",
+            "m2byte"
+        ],
+        "desc": "Store x87 FPU Status Word"
+    },
+    {
+        "op": "FSUB",
+        "sig": [
+            "ST(i), ST(0)",
+            "ST(0), ST(i)"
+        ],
+        "desc": "Subtract"
+    },
+    {
+        "op": "FSUBP",
+        "sig": [
+            "ST(0), ST(i)"
+        ],
+        "desc": "Subtract"
+    },
+    {
+        "op": "FISUB",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Subtract"
+    },
+    {
+        "op": "FSUBR",
+        "sig": [
+            "ST(0), ST(i)",
+            "ST(i), ST(0)"
+        ],
+        "desc": "Reverse Subtract"
+    },
+    {
+        "op": "FSUBRP",
+        "sig": [
+            "ST(0), ST(i)"
+        ],
+        "desc": "Reverse Subtract"
+    },
+    {
+        "op": "FISUBR",
+        "sig": [
+            "m16int"
+        ],
+        "desc": "Reverse Subtract"
+    },
+    {
+        "op": "FTST",
+        "sig": [],
+        "desc": "TEST"
+    },
+    {
+        "op": "FUCOM",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Unordered Compare Floating Point Values"
+    },
+    {
+        "op": "FUCOMP",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Unordered Compare Floating Point Values"
+    },
+    {
+        "op": "FUCOMPP",
+        "sig": [],
+        "desc": "Unordered Compare Floating Point Values"
+    },
+    {
+        "op": "FXAM",
+        "sig": [],
+        "desc": "Examine ModR/M"
+    },
+    {
+        "op": "FXCH",
+        "sig": [
+            "ST(i)"
+        ],
+        "desc": "Exchange Register Contents"
+    },
+    {
+        "op": "FXRSTOR",
+        "sig": [
+            "m512byte"
+        ],
+        "desc": "Restore x87 FPU, MMX, XMM, and MXCSR State"
+    },
+    {
+        "op": "FXSAVE",
+        "sig": [
+            "m512byte"
+        ],
+        "desc": "Save x87 FPU, MMX Technology, and SSE State"
+    },
+    {
+        "op": "FXTRACT",
+        "sig": [],
+        "desc": "Extract Exponent and Significand"
+    },
+    {
+        "op": "FYL2X",
+        "sig": [],
+        "desc": "Compute y \u2217 log2x"
+    },
+    {
+        "op": "FYL2XP1",
+        "sig": [],
+        "desc": "Compute y \u2217 log2(x +1)"
+    },
+    {
+        "op": "HADDPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Double-FP Horizontal Add"
+    },
+    {
+        "op": "HADDPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Single-FP Horizontal Add"
+    },
+    {
+        "op": "HLT",
+        "sig": [],
+        "desc": "Halt"
+    },
+    {
+        "op": "HSUBPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Double-FP Horizontal Subtract"
+    },
+    {
+        "op": "HSUBPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Single-FP Horizontal Subtract"
+    },
+    {
+        "op": "INSB",
+        "sig": [],
+        "desc": "Input from Port to String"
+    },
+    {
+        "op": "INSW",
+        "sig": [],
+        "desc": "Input from Port to String"
+    },
+    {
+        "op": "INSERTPS",
+        "sig": [
+            "imm8, xmm2/m32, xmm1"
+        ],
+        "desc": "Insert Packed Single Precision Floating-Point Value"
+    },
+    {
+        "op": "INTO",
+        "sig": [],
+        "desc": "Call to Interrupt Procedure"
+    },
+    {
+        "op": "INVD",
+        "sig": [],
+        "desc": "Invalidate Internal Caches"
+    },
+    {
+        "op": "INVLPG",
+        "sig": [
+            "m"
+        ],
+        "desc": "Invalidate TLB Entries"
+    },
+    {
+        "op": "INVPCID",
+        "sig": [
+            "m128, r32",
+            "m128, r64"
+        ],
+        "desc": "Invalidate Process-Context Identifier"
+    },
+    {
+        "op": "JMP",
+        "sig": [
+            "rel16",
+            "rel32",
+            "rel32",
+            "rel8"
+        ],
+        "desc": "Jump"
+    },
+    {
+        "op": "LAHF",
+        "sig": [],
+        "desc": "Load Status Flags into AH Register"
+    },
+    {
+        "op": "LDDQU",
+        "sig": [
+            "m128, xmm1"
+        ],
+        "desc": "Load Unaligned Integer 128 Bits"
+    },
+    {
+        "op": "LDMXCSR",
+        "sig": [
+            "m32"
+        ],
+        "desc": "Load MXCSR Register"
+    },
+    {
+        "op": "LFENCE",
+        "sig": [],
+        "desc": "Load Fence"
+    },
+    {
+        "op": "LGDT",
+        "sig": [
+            "m16&64"
+        ],
+        "desc": "Load Global/Interrupt Descriptor Table Register"
+    },
+    {
+        "op": "LIDT",
+        "sig": [
+            "m16&64"
+        ],
+        "desc": "Load Global/Interrupt Descriptor Table Register"
+    },
+    {
+        "op": "LLDT",
+        "sig": [
+            "r/m16"
+        ],
+        "desc": "Load Local Descriptor Table Register"
+    },
+    {
+        "op": "LMSW",
+        "sig": [
+            "r/m16"
+        ],
+        "desc": "Load Machine Status Word"
+    },
+    {
+        "op": "LOCK",
+        "sig": [],
+        "desc": "Assert LOCK# Signal Prefix"
+    },
+    {
+        "op": "LODSB",
+        "sig": [],
+        "desc": "Load String"
+    },
+    {
+        "op": "LODSW",
+        "sig": [],
+        "desc": "Load String"
+    },
+    {
+        "op": "LODSQ",
+        "sig": [],
+        "desc": "Load String"
+    },
+    {
+        "op": "LOOP",
+        "sig": [
+            "rel8"
+        ],
+        "desc": "Loop According to ECX Counter"
+    },
+    {
+        "op": "LTR",
+        "sig": [
+            "r/m16"
+        ],
+        "desc": "Load Task Register"
+    },
+    {
+        "op": "MASKMOVQ",
+        "sig": [
+            "mm2, mm1"
+        ],
+        "desc": "Store Selected Bytes of Quadword"
+    },
+    {
+        "op": "MAXPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Return Maximum Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "MAXPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Return Maximum Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MAXSD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Return Maximum Scalar Double-Precision Floating-Point Value"
+    },
+    {
+        "op": "MAXSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Return Maximum Scalar Single-Precision Floating-Point Value"
+    },
+    {
+        "op": "MFENCE",
+        "sig": [],
+        "desc": "Memory Fence"
+    },
+    {
+        "op": "MINPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Return Minimum Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "MINPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Return Minimum Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MINSD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Return Minimum Scalar Double-Precision Floating-Point Value"
+    },
+    {
+        "op": "MINSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Return Minimum Scalar Single-Precision Floating-Point Value"
+    },
+    {
+        "op": "MONITOR",
+        "sig": [],
+        "desc": "Set Up Monitor Address"
+    },
+    {
+        "op": "MOVAPD",
+        "sig": [
+            "xmm2/m128, xmm1",
+            "xmm1, xmm2/m128"
+        ],
+        "desc": "Move Aligned Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "MOVAPS",
+        "sig": [
+            "xmm2/m128, xmm1",
+            "xmm1, xmm2/m128"
+        ],
+        "desc": "Move Aligned Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MOVD",
+        "sig": [
+            "r/m32, mm1",
+            "mm1, r/m32",
+            "xmm1, r/m32",
+            "r/m32, xmm1"
+        ],
+        "desc": "Move Doubleword/Move Quadword"
+    },
+    {
+        "op": "MOVQ",
+        "sig": [
+            "rmr64, CR0-CR7",
+            "rmr64, CR8",
+            "rmr64, DR0-DR7",
+            "moffs64, RAX",
+            "RAX, moffs64",
+            "imm32, r/m64",
+            "r64, r/m64",
+            "r/m64, r64",
+            "imm64, r64op",
+            "CR0-CR7, rmr64",
+            "CR8, rmr64",
+            "DR0-DR7, rmr64",
+            "xmm2, mm1",
+            "mm2/m64, mm1",
+            "r/m64, mm1",
+            "mm1, mm2/m64",
+            "mm1, r/m64",
+            "xmm1, r/m64",
+            "r/m64, xmm1",
+            "xmm2/m64, xmm1",
+            "xmm1, xmm2/m64"
+        ],
+        "desc": "Move Doubleword/Move Quadword"
+    },
+    {
+        "op": "MOVDDUP",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Move One Double-FP and Duplicate"
+    },
+    {
+        "op": "MOVHLPS",
+        "sig": [
+            "xmm2, xmm1"
+        ],
+        "desc": "Move Packed Single-Precision Floating-Point Values High to Low"
+    },
+    {
+        "op": "MOVHPD",
+        "sig": [
+            "xmm1, m64",
+            "m64, xmm1"
+        ],
+        "desc": "Move High Packed Double-Precision Floating-Point Value"
+    },
+    {
+        "op": "MOVHPS",
+        "sig": [
+            "xmm1, m64",
+            "m64, xmm1"
+        ],
+        "desc": "Move High Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MOVLHPS",
+        "sig": [
+            "xmm2, xmm1"
+        ],
+        "desc": "Move Packed Single-Precision Floating-Point Values Low to High"
+    },
+    {
+        "op": "MOVLPD",
+        "sig": [
+            "xmm1, m64",
+            "m64, xmm1"
+        ],
+        "desc": "Move Low Packed Double-Precision Floating-Point Value"
+    },
+    {
+        "op": "MOVLPS",
+        "sig": [
+            "xmm1, m64",
+            "m64, xmm1"
+        ],
+        "desc": "Move Low Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MOVMSKPD",
+        "sig": [
+            "xmm2, r32"
+        ],
+        "desc": "Extract Packed Double-Precision Floating-Point Sign Mask"
+    },
+    {
+        "op": "MOVMSKPS",
+        "sig": [
+            "xmm2, r32"
+        ],
+        "desc": "Extract Packed Single-Precision Floating-Point Sign Mask"
+    },
+    {
+        "op": "MOVNTDQA",
+        "sig": [
+            "m128, xmm1"
+        ],
+        "desc": "Load Double Quadword Non-Temporal Aligned Hint"
+    },
+    {
+        "op": "MOVNTPD",
+        "sig": [
+            "xmm1, m128"
+        ],
+        "desc": "Store Packed Double-Precision Floating-Point Values Using Non-Temporal Hint"
+    },
+    {
+        "op": "MOVNTPS",
+        "sig": [
+            "xmm1, m128"
+        ],
+        "desc": "Store Packed Single-Precision Floating-Point Values Using Non-Temporal Hint"
+    },
+    {
+        "op": "MOVNTQ",
+        "sig": [
+            "mm1, m64"
+        ],
+        "desc": "Store of Quadword Using Non-Temporal Hint"
+    },
+    {
+        "op": "MOVQ",
+        "sig": [
+            "rmr64, CR0-CR7",
+            "rmr64, CR8",
+            "rmr64, DR0-DR7",
+            "moffs64, RAX",
+            "RAX, moffs64",
+            "imm32, r/m64",
+            "r64, r/m64",
+            "r/m64, r64",
+            "imm64, r64op",
+            "CR0-CR7, rmr64",
+            "CR8, rmr64",
+            "DR0-DR7, rmr64",
+            "xmm2, mm1",
+            "mm2/m64, mm1",
+            "r/m64, mm1",
+            "mm1, mm2/m64",
+            "mm1, r/m64",
+            "xmm1, r/m64",
+            "r/m64, xmm1",
+            "xmm2/m64, xmm1",
+            "xmm1, xmm2/m64"
+        ],
+        "desc": "Move Quadword"
+    },
+    {
+        "op": "MOVSB",
+        "sig": [],
+        "desc": "Move Data from String to String"
+    },
+    {
+        "op": "MOVSW",
+        "sig": [],
+        "desc": "Move Data from String to String"
+    },
+    {
+        "op": "MOVSD",
+        "sig": [
+            "xmm2/m64, xmm1",
+            "xmm1, xmm2/m64"
+        ],
+        "desc": "Move Data from String to String"
+    },
+    {
+        "op": "MOVSQ",
+        "sig": [],
+        "desc": "Move Data from String to String"
+    },
+    {
+        "op": "MOVSD",
+        "sig": [
+            "xmm2/m64, xmm1",
+            "xmm1, xmm2/m64"
+        ],
+        "desc": "Move Scalar Double-Precision Floating-Point Value"
+    },
+    {
+        "op": "MOVSHDUP",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Move Packed Single-FP High and Duplicate"
+    },
+    {
+        "op": "MOVSLDUP",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Move Packed Single-FP Low and Duplicate"
+    },
+    {
+        "op": "MOVSS",
+        "sig": [
+            "xmm2/m32, xmm1",
+            "xmm1, xmm2/m32"
+        ],
+        "desc": "Move Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MOVUPD",
+        "sig": [
+            "xmm2/m128, xmm1",
+            "xmm1, xmm2/m128"
+        ],
+        "desc": "Move Unaligned Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "MOVUPS",
+        "sig": [
+            "xmm2/m128, xmm1",
+            "xmm1, xmm2/m128"
+        ],
+        "desc": "Move Unaligned Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MPSADBW",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Compute Multiple Packed Sums of Absolute Difference"
+    },
+    {
+        "op": "MULPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Multiply Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "MULPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Multiply Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MULSD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Multiply Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "MULSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Multiply Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "MWAIT",
+        "sig": [],
+        "desc": "Monitor Wait"
+    },
+    {
+        "op": "NOP",
+        "sig": [],
+        "desc": "No Operation"
+    },
+    {
+        "op": "ORPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical OR of Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "ORPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical OR of Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "OUTSB",
+        "sig": [],
+        "desc": "Output String to Port"
+    },
+    {
+        "op": "OUTSW",
+        "sig": [],
+        "desc": "Output String to Port"
+    },
+    {
+        "op": "PABSB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Absolute Value"
+    },
+    {
+        "op": "PABSW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Absolute Value"
+    },
+    {
+        "op": "PABSD",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Absolute Value"
+    },
+    {
+        "op": "PACKSSWB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Pack with Signed Saturation"
+    },
+    {
+        "op": "PACKUSDW",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Pack with Unsigned Saturation"
+    },
+    {
+        "op": "PACKUSWB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Pack with Unsigned Saturation"
+    },
+    {
+        "op": "PADDB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Integers"
+    },
+    {
+        "op": "PADDW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Integers"
+    },
+    {
+        "op": "PADDQ",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Quadword Integers"
+    },
+    {
+        "op": "PADDSB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Signed Integers with Signed Saturation"
+    },
+    {
+        "op": "PADDSW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Signed Integers with Signed Saturation"
+    },
+    {
+        "op": "PADDUSB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Unsigned Integers with Unsigned Saturation"
+    },
+    {
+        "op": "PADDUSW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Add Packed Unsigned Integers with Unsigned Saturation"
+    },
+    {
+        "op": "PALIGNR",
+        "sig": [
+            "imm8, mm2/m64, mm1",
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Align Right"
+    },
+    {
+        "op": "PAND",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Logical AND"
+    },
+    {
+        "op": "PANDN",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Logical AND NOT"
+    },
+    {
+        "op": "PAUSE",
+        "sig": [],
+        "desc": "Spin Loop Hint"
+    },
+    {
+        "op": "PAVGB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Average Packed Integers"
+    },
+    {
+        "op": "PAVGW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Average Packed Integers"
+    },
+    {
+        "op": "PBLENDVB",
+        "sig": [
+            "<XMM0>, xmm2/m128, xmm1"
+        ],
+        "desc": "Variable Blend Packed Bytes"
+    },
+    {
+        "op": "PBLENDW",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Blend Packed Words"
+    },
+    {
+        "op": "PCLMULQDQ",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Carry-Less Multiplication Quadword"
+    },
+    {
+        "op": "PCMPEQB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compare Packed Data for Equal"
+    },
+    {
+        "op": "PCMPEQW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compare Packed Data for Equal"
+    },
+    {
+        "op": "PCMPEQQ",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compare Packed Qword Data for Equal"
+    },
+    {
+        "op": "PCMPESTRI",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Compare Explicit Length Strings, Return Index"
+    },
+    {
+        "op": "PCMPESTRM",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Compare Explicit Length Strings, Return Mask"
+    },
+    {
+        "op": "PCMPGTB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compare Packed Signed Integers for Greater Than"
+    },
+    {
+        "op": "PCMPGTW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compare Packed Signed Integers for Greater Than"
+    },
+    {
+        "op": "PCMPGTQ",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compare Packed Data for Greater Than"
+    },
+    {
+        "op": "PCMPISTRI",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Compare Implicit Length Strings, Return Index"
+    },
+    {
+        "op": "PCMPISTRM",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Compare Implicit Length Strings, Return Mask"
+    },
+    {
+        "op": "PEXTRB",
+        "sig": [
+            "imm8, xmm1, r32/m8"
+        ],
+        "desc": "Extract Byte/Dword/Qword"
+    },
+    {
+        "op": "PEXTRD",
+        "sig": [
+            "imm8, xmm1, r/m32"
+        ],
+        "desc": "Extract Byte/Dword/Qword"
+    },
+    {
+        "op": "PEXTRQ",
+        "sig": [
+            "imm8, xmm1, r/m64"
+        ],
+        "desc": "Extract Byte/Dword/Qword"
+    },
+    {
+        "op": "PEXTRW",
+        "sig": [
+            "imm8, mm2, r32",
+            "imm8, xmm2, r32",
+            "imm8, xmm1, r32/m16"
+        ],
+        "desc": "Extract Word"
+    },
+    {
+        "op": "PHADDSW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Horizontal Add and Saturate"
+    },
+    {
+        "op": "PHADDW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Horizontal Add"
+    },
+    {
+        "op": "PHADDD",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Horizontal Add"
+    },
+    {
+        "op": "PHMINPOSUW",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Horizontal Word Minimum"
+    },
+    {
+        "op": "PHSUBSW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Horizontal Subtract and Saturate"
+    },
+    {
+        "op": "PHSUBW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Horizontal Subtract"
+    },
+    {
+        "op": "PHSUBD",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Packed Horizontal Subtract"
+    },
+    {
+        "op": "PINSRB",
+        "sig": [
+            "imm8, r32/m8, xmm1"
+        ],
+        "desc": "Insert Byte/Dword/Qword"
+    },
+    {
+        "op": "PINSRD",
+        "sig": [
+            "imm8, r/m32, xmm1"
+        ],
+        "desc": "Insert Byte/Dword/Qword"
+    },
+    {
+        "op": "PINSRQ",
+        "sig": [
+            "imm8, r/m64, xmm1"
+        ],
+        "desc": "Insert Byte/Dword/Qword"
+    },
+    {
+        "op": "PINSRW",
+        "sig": [
+            "imm8, r32/m16, mm1",
+            "imm8, r32/m16, xmm1"
+        ],
+        "desc": "Insert Word"
+    },
+    {
+        "op": "PMADDUBSW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Multiply and Add Packed Signed and Unsigned Bytes"
+    },
+    {
+        "op": "PMAXSB",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Maximum of Packed Signed Byte Integers"
+    },
+    {
+        "op": "PMAXSD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Maximum of Packed Signed Dword Integers"
+    },
+    {
+        "op": "PMAXSW",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Maximum of Packed Signed Word Integers"
+    },
+    {
+        "op": "PMAXUB",
+        "sig": [
+            "mm2/m64, mm1",
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Maximum of Packed Unsigned Byte Integers"
+    },
+    {
+        "op": "PMAXUD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Maximum of Packed Unsigned Dword Integers"
+    },
+    {
+        "op": "PMAXUW",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Maximum of Packed Word Integers"
+    },
+    {
+        "op": "PMINSB",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Minimum of Packed Signed Byte Integers"
+    },
+    {
+        "op": "PMINSD",
+        "sig": []
+    },
+    {
+        "op": "VFNMADD213PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD231PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD132PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD213PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD231PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD132SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD213SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD231SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD132SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD213SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD231SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB132PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB213PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB231PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB132PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB213PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB231PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB132SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB213SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB231SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB132SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB213SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMSUB231SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Negative Multiply-Subtract of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VINSERTF128",
+        "sig": [
+            "imm8, xmm2/m128, ymmV, ymm1"
+        ],
+        "desc": "Insert Packed Floating-Point Values"
+    },
+    {
+        "op": "VINSERTI128",
+        "sig": [
+            "imm8, xmm2/m128, ymmV, ymm1"
+        ],
+        "desc": "Insert Packed Integer Values"
+    },
+    {
+        "op": "VPBLENDD",
+        "sig": [
+            "imm8, xmm2/m128, xmmV, xmm1",
+            "imm8, ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Blend Packed Dwords"
+    },
+    {
+        "op": "VPERM2F128",
+        "sig": [
+            "imm8, ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Permute Floating-Point Values"
+    },
+    {
+        "op": "VPERM2I128",
+        "sig": [
+            "imm8, ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Permute Integer Values"
+    },
+    {
+        "op": "VPERMD",
+        "sig": [
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Full Doublewords Element Permutation"
+    },
+    {
+        "op": "VPERMILPD",
+        "sig": [
+            "imm8, xmm2/m128, xmm1",
+            "xmm2/m128, xmmV, xmm1",
+            "imm8, ymm2/m256, ymm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Permute Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VPERMILPS",
+        "sig": [
+            "imm8, xmm2/m128, xmm1",
+            "xmm2/m128, xmmV, xmm1",
+            "imm8, ymm2/m256, ymm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Permute Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VPERMPD",
+        "sig": [
+            "imm8, ymm2/m256, ymm1"
+        ],
+        "desc": "Permute Double-Precision Floating-Point Elements"
+    },
+    {
+        "op": "VPERMPS",
+        "sig": [
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Permute Single-Precision Floating-Point Elements"
+    },
+    {
+        "op": "VPERMQ",
+        "sig": [
+            "imm8, ymm2/m256, ymm1"
+        ],
+        "desc": "Qwords Element Permutation"
+    },
+    {
+        "op": "VPSLLVD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Variable Bit Shift Left Logical"
+    },
+    {
+        "op": "VPSLLVQ",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Variable Bit Shift Left Logical"
+    },
+    {
+        "op": "VPSRAVD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Variable Bit Shift Right Arithmetic"
+    },
+    {
+        "op": "VPSRLVD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Variable Bit Shift Right Logical"
+    },
+    {
+        "op": "VPSRLVQ",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Variable Bit Shift Right Logical"
+    },
+    {
+        "op": "VTESTPD",
+        "sig": [
+            "xmm2/m128, xmm1",
+            "ymm2/m256, ymm1"
+        ],
+        "desc": "Packed Bit Test"
+    },
+    {
+        "op": "VTESTPS",
+        "sig": [
+            "xmm2/m128, xmm1",
+            "ymm2/m256, ymm1"
+        ],
+        "desc": "Packed Bit Test"
+    },
+    {
+        "op": "VZEROALL",
+        "sig": [],
+        "desc": "Zero All YMM Registers"
+    },
+    {
+        "op": "VZEROUPPER",
+        "sig": [],
+        "desc": "Zero Upper Bits of YMM Registers"
+    },
+    {
+        "op": "WAIT",
+        "sig": [],
+        "desc": "Wait"
+    },
+    {
+        "op": "FWAIT",
+        "sig": [],
+        "desc": "Wait"
+    },
+    {
+        "op": "WBINVD",
+        "sig": [],
+        "desc": "Write Back and Invalidate Cache"
+    },
+    {
+        "op": "WRFSBASE",
+        "sig": [
+            "rmr32",
+            "rmr64"
+        ],
+        "desc": "Write FS/GS Segment Base"
+    },
+    {
+        "op": "WRGSBASE",
+        "sig": [
+            "rmr32",
+            "rmr64"
+        ],
+        "desc": "Write FS/GS Segment Base"
+    },
+    {
+        "op": "WRMSR",
+        "sig": [],
+        "desc": "Write to Model Specific Register"
+    },
+    {
+        "op": "XABORT",
+        "sig": [
+            "imm8"
+        ],
+        "desc": "Transactional Abort"
+    },
+    {
+        "op": "XACQUIRE",
+        "sig": [],
+        "desc": "Hardware Lock Elision Prefix Hints"
+    },
+    {
+        "op": "XRELEASE",
+        "sig": [],
+        "desc": "Hardware Lock Elision Prefix Hints"
+    },
+    {
+        "op": "XBEGIN",
+        "sig": [
+            "rel16",
+            "rel32"
+        ],
+        "desc": "Transactional Begin"
+    },
+    {
+        "op": "XEND",
+        "sig": [],
+        "desc": "Transactional End"
+    },
+    {
+        "op": "XGETBV",
+        "sig": [],
+        "desc": "Get Value of Extended Control Register"
+    },
+    {
+        "op": "XLAT",
+        "sig": [],
+        "desc": "Table Look-up Translation"
+    },
+    {
+        "op": "XORPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical XOR for Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "XORPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Bitwise Logical XOR for Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "XRSTOR",
+        "sig": [
+            "mem"
+        ],
+        "desc": "Restore Processor Extended States"
+    },
+    {
+        "op": "XRSTORS",
+        "sig": [
+            "mem"
+        ],
+        "desc": "Restore Processor Extended States Supervisor"
+    },
+    {
+        "op": "XSAVE",
+        "sig": [
+            "mem"
+        ],
+        "desc": "Save Processor Extended States"
+    },
+    {
+        "op": "XSAVEC",
+        "sig": [
+            "mem"
+        ],
+        "desc": "Save Processor Extended States with Compaction"
+    },
+    {
+        "op": "XSAVEOPT",
+        "sig": [
+            "mem"
+        ],
+        "desc": "Save Processor Extended States Optimized"
+    },
+    {
+        "op": "XSAVES",
+        "sig": [
+            "mem"
+        ],
+        "desc": "Save Processor Extended States Supervisor"
+    },
+    {
+        "op": "XSETBV",
+        "sig": [],
+        "desc": "Set Extended Control Register"
+    },
+    {
+        "op": "XTEST",
+        "sig": [],
+        "desc": "Test If In Transactional Execution"
+    },
+    {
+        "op": "ROUNDPD",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Round Packed Double Precision Floating-Point Values"
+    },
+    {
+        "op": "ROUNDPS",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Round Packed Single Precision Floating-Point Values"
+    },
+    {
+        "op": "ROUNDSD",
+        "sig": [
+            "imm8, xmm2/m64, xmm1"
+        ],
+        "desc": "Round Scalar Double Precision Floating-Point Values"
+    },
+    {
+        "op": "ROUNDSS",
+        "sig": [
+            "imm8, xmm2/m32, xmm1"
+        ],
+        "desc": "Round Scalar Single Precision Floating-Point Values"
+    },
+    {
+        "op": "RSM",
+        "sig": [],
+        "desc": "Resume from System Management Mode"
+    },
+    {
+        "op": "RSQRTPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compute Reciprocals of Square Roots of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "RSQRTSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Compute Reciprocal of Square Root of Scalar Single-Precision Floating-Point Value"
+    },
+    {
+        "op": "SAHF",
+        "sig": [],
+        "desc": "Store AH into Flags"
+    },
+    {
+        "op": "SCASB",
+        "sig": [],
+        "desc": "Scan String"
+    },
+    {
+        "op": "SCASW",
+        "sig": [],
+        "desc": "Scan String"
+    },
+    {
+        "op": "SFENCE",
+        "sig": [],
+        "desc": "Store Fence"
+    },
+    {
+        "op": "SHUFPD",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Shuffle Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "SHUFPS",
+        "sig": [
+            "imm8, xmm2/m128, xmm1"
+        ],
+        "desc": "Shuffle Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "SQRTPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compute Square Roots of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "SQRTPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Compute Square Roots of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "SQRTSD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Compute Square Root of Scalar Double-Precision Floating-Point Value"
+    },
+    {
+        "op": "SQRTSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Compute Square Root of Scalar Single-Precision Floating-Point Value"
+    },
+    {
+        "op": "STAC",
+        "sig": [],
+        "desc": "Set AC Flag in EFLAGS Register"
+    },
+    {
+        "op": "STC",
+        "sig": [],
+        "desc": "Set Carry Flag"
+    },
+    {
+        "op": "STD",
+        "sig": [],
+        "desc": "Set Direction Flag"
+    },
+    {
+        "op": "STI",
+        "sig": [],
+        "desc": "Set Interrupt Flag"
+    },
+    {
+        "op": "STMXCSR",
+        "sig": [
+            "m32"
+        ],
+        "desc": "Store MXCSR Register State"
+    },
+    {
+        "op": "STOSB",
+        "sig": [],
+        "desc": "Store String"
+    },
+    {
+        "op": "STOSW",
+        "sig": [],
+        "desc": "Store String"
+    },
+    {
+        "op": "STOSQ",
+        "sig": [],
+        "desc": "Store String"
+    },
+    {
+        "op": "SUBPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Subtract Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "SUBPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Subtract Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "SUBSD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Subtract Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "SUBSS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Subtract Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "SWAPGS",
+        "sig": [],
+        "desc": "Swap GS Base Register"
+    },
+    {
+        "op": "SYSCALL",
+        "sig": [],
+        "desc": "Fast System Call"
+    },
+    {
+        "op": "SYSENTER",
+        "sig": [],
+        "desc": "Fast System Call"
+    },
+    {
+        "op": "SYSEXIT",
+        "sig": [],
+        "desc": "Fast Return from Fast System Call"
+    },
+    {
+        "op": "SYSRET",
+        "sig": [],
+        "desc": "Return From Fast System Call"
+    },
+    {
+        "op": "UCOMISD",
+        "sig": [
+            "xmm2/m64, xmm1"
+        ],
+        "desc": "Unordered Compare Scalar Double-Precision Floating-Point Values and Set EFLAGS"
+    },
+    {
+        "op": "UCOMISS",
+        "sig": [
+            "xmm2/m32, xmm1"
+        ],
+        "desc": "Unordered Compare Scalar Single-Precision Floating-Point Values and Set EFLAGS"
+    },
+    {
+        "op": "UD2",
+        "sig": [],
+        "desc": "Undefined Instruction"
+    },
+    {
+        "op": "UNPCKHPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Unpack and Interleave High Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "UNPCKHPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Unpack and Interleave High Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "UNPCKLPD",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Unpack and Interleave Low Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "UNPCKLPS",
+        "sig": [
+            "xmm2/m128, xmm1"
+        ],
+        "desc": "Unpack and Interleave Low Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VCVTPH2PS",
+        "sig": [
+            "xmm2/m64, xmm1",
+            "xmm2/m128, ymm1"
+        ],
+        "desc": "Convert 16-bit FP Values to Single-Precision FP Values"
+    },
+    {
+        "op": "VCVTPS2PH",
+        "sig": [
+            "imm8, ymm1, xmm2/m128",
+            "imm8, xmm1, xmm2/m64"
+        ],
+        "desc": "Convert Single-Precision FP value to 16-bit FP value"
+    },
+    {
+        "op": "VERR",
+        "sig": [
+            "r/m16"
+        ],
+        "desc": "Verify a Segment for Reading or Writing"
+    },
+    {
+        "op": "VERW",
+        "sig": [
+            "r/m16"
+        ],
+        "desc": "Verify a Segment for Reading or Writing"
+    },
+    {
+        "op": "VEXTRACTF128",
+        "sig": [
+            "imm8, ymm1, xmm2/m128"
+        ],
+        "desc": "Extract Packed Floating-Point Values"
+    },
+    {
+        "op": "VEXTRACTI128",
+        "sig": [
+            "imm8, ymm1, xmm2/m128"
+        ],
+        "desc": "Extract packed Integer Values"
+    },
+    {
+        "op": "VFMADD132PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD213PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD231PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD132PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD213PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD231PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD132SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Add of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD213SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Add of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD231SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Add of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD132SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Add of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD213SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Add of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADD231SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Add of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADDSUB132PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Add/Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADDSUB213PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Add/Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADDSUB231PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Add/Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADDSUB132PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Add/Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADDSUB213PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Add/Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMADDSUB231PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Add/Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB132PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB213PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB231PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB132PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB213PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB231PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB132SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB213SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB231SD",
+        "sig": [
+            "xmm2/m64, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Scalar Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB132SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB213SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUB231SS",
+        "sig": [
+            "xmm2/m32, xmmV, xmm1"
+        ],
+        "desc": "Fused Multiply-Subtract of Scalar Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUBADD132PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Subtract/Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUBADD213PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Subtract/Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUBADD231PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Subtract/Add of Packed Double-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUBADD132PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Subtract/Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUBADD213PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Subtract/Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFMSUBADD231PS",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Multiply-Alternating Subtract/Add of Packed Single-Precision Floating-Point Values"
+    },
+    {
+        "op": "VFNMADD132PD",
+        "sig": [
+            "xmm2/m128, xmmV, xmm1",
+            "ymm2/m256, ymmV, ymm1"
+        ],
+        "desc": "Fused Negative Multiply-Add of Packed Double-Precision Floating-Point Values"
+    }
+]

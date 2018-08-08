@@ -19,7 +19,7 @@
 		"onLanguage:go",
 		"onLanguage:asm"
 	],
-	"main": "./out/extension",
+	"main": "./autocomplete/extension",
     "contributes": {
         "languages": [{
             "id": "asm",
