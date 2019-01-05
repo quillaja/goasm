@@ -352,13 +352,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?i:[xy]([0-9]|1[0-5]))\b</string>
-					<key>name</key>
-					<string>variable.other.readwrite</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?i:z([12]?[0-9]|30|31))\b</string>
+					<string>\b(?i:[xyz]([12]?[0-9]|30|31))\b</string>
 					<key>name</key>
 					<string>variable.other.readwrite</string>
 				</dict>

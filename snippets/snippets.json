@@ -1,0 +1,44 @@
+{
+    "Middle dot(·)":{
+        "prefix":"middle dot",
+        "scope":"go,asm",
+        "body":["·"],
+        "description": "The middle dot character (U+00B7) used between package names and function names."
+    },
+    "Division slash(∕)":{
+        "prefix":"division slash",
+        "scope":"go,asm",
+        "body":["∕"],
+        "description": "The divsion slash character (U+2215) used between directory names in a package path."
+    },
+    "function":{
+        "prefix":"TEXT",
+        "scope":"go,asm",
+        "body":["TEXT ·${1:name}(SB), ${2:NOSPLIT}, ${3:framesize-argsize}"],
+        "description": "Line for defining a function."
+    },
+    "data":{
+        "prefix":"DATA",
+        "scope":"go,asm",
+        "body":["DATA ${1:symbol}+${2:offset}(SB)/${3:width}, ${4:value}"],
+        "description": "Line for defining data."
+    },
+    "global":{
+        "prefix":"GLOBL",
+        "scope":"go,asm",
+        "body":["GLOBL ${1:symbol}(SB), ${2:flags}, ${3:size}"],
+        "description": "Line for defining data."
+    },
+    "textflag":{
+        "prefix":"#include",
+        "scope":"go,asm",
+        "body":["#include \"textflag.h\""],
+        "description": "Header for text flags such as NOSPLIT, RODATA, and NOPTR."
+    },
+    "go_asm":{
+        "prefix":"#include",
+        "scope":"go,asm",
+        "body":["#include \"go_asm.h\""],
+        "description": "Header defining the OS-dependent macro 'get_tls.'"
+    }
+}
