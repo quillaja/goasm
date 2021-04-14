@@ -1,5 +1,8 @@
 # Change Log
 
+### v0.0.5
+- bug fix for issue [#2](https://github.com/quillaja/goasm/issues/2)
+
 ### v0.0.4
 - snippets for middle dot, division slash, function/TEXT, DATA, GLOBL, some #includes.
 - auto complete for AVX512 "Z" registers and X/Y registers 16-31.

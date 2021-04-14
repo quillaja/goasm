@@ -2,7 +2,7 @@
     "name": "goasm",
     "displayName": "Go Asm",
     "description": "Syntax highlighting & autocomplete for Go assembly.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "quillaja",
     "icon": "goasm.png",
     "engines": {
@@ -23,7 +23,7 @@
     "contributes": {
         "languages": [{
             "id": "asm",
-            "aliases": ["go", "asm", "goasm", "plan9", "GAS/AT&T", "x86/x64"],
+            "aliases": ["asm", "goasm", "plan9", "GAS/AT&T", "x86/x64"],
             "extensions": [".s",".S"],
             "configuration": "./language-configuration.json"
         }],
